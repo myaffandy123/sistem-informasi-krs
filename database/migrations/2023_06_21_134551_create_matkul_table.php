@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('matkul', function (Blueprint $table) {
             $table->id();
+            $table->string('kode')->unique();
+            $table->string('nama');
+            $table->string('kelas');
+            $table->string('ruang');
+            $table->unsignedBigInteger('dosen_id');
+            $table->string('dosen_nama');
+            $table->foreign('dosen_id')->references('id')->on('dosen')->onDelete('cascade');
             $table->timestamps();
         });
     }
