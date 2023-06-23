@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nim')->nullable();
             $table->string('nip')->nullable();
             $table->string('password');
-            $table->enum('role', ['mahasiswa', 'dosen', 'admin'])->default('mahasiswa');
+            $table->enum('role', ['mahasiswa', 'dosen', 'administrator'])->default('mahasiswa');
             $table->rememberToken();
             $table->timestamps();
         });

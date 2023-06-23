@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('nama');
             $table->string('kelas');
             $table->string('ruang');
-            $table->unsignedBigInteger('dosen_id');
-            $table->string('dosen_nama');
+            $table->unsignedBigInteger('dosen_id')->nullable();
+            $table->string('dosen_nama')->nullable();
             $table->foreign('dosen_id')->references('id')->on('dosen')->onDelete('cascade');
             $table->timestamps();
         });
