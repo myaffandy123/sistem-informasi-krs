@@ -38,10 +38,8 @@ Route::post('/dosen/hapus', [DosenController::class, 'hapusMatkul'])->name('dose
 
 
 Route::post('/register', [RegisterController::class, 'register'])->name('register');
-
 Route::post('/login', [LoginController::class, 'login'])->name('login');
-
-Route::post('/logout', [LoginController::class, 'logout']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
 Route::get('/admin', [AdminController::class, 'index'])->middleware('auth')->name('admin');
