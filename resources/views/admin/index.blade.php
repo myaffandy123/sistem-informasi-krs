@@ -37,7 +37,7 @@
                                 <td>{{$m -> nama}}</td>
                                 <td>{{$m -> kelas}}</td>
                                 <td>{{$m -> ruang}}</td>
-                                <td>{{$m -> dosen_id}}</td>
+                                <td>{{$m -> dosen_nama}}</td>
                                 <td>
                                     <!-- <a href="{{ route('admin/edit', ['id' => $m->id]) }}" class="btn btn-warning">Edit</a> -->
                                     <div class='row'>

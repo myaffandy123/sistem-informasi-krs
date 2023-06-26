@@ -20,7 +20,7 @@ class DosenController extends Controller
         $matkul_id = $request->id;
         $dosen = Dosen::where('id', auth()->user()->id)->first();
 
-        $matkulAmpu = Matkul::find($matkul_id)->first();
+        $matkulAmpu = Matkul::find($matkul_id);
         $matkulAmpu->dosen_id = $dosen->id;
         $matkulAmpu->dosen_nama = $dosen->nama;
         $matkulAmpu->update();

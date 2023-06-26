@@ -10,6 +10,6 @@ SIAKAD merupakan seubuah website yang bertujuan untuk menyediakan informasi dan 
 
 ## Dokumentasi Website
 ### 1. Landing Page
-![ss0.jpg](./public/landingPage/img/ss0.png)
+![ss0.jpg](./public/landingpage/img/ss0.png)
 ### 2. Dashboard Page
-![ss1.jpg](./public/landingPage/img/ss1.png)
+![ss1.jpg](./public/landingpage/img/ss1.png)
