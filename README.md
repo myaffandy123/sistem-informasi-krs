@@ -38,3 +38,8 @@ php artisan serve
 ![ss0.jpg](./public/landingpage/img/ss0.png)
 ### 2. Dashboard Page
 ![ss1.jpg](./public/landingpage/img/ss1.png)
+
+## Kelompok
+1. Muhammad Yusuf Affandy (215150200111052)
+2. Nabillah Azzam Luthfi M. (215150200111064)
+3. Amala Zakira (215150201111044)
