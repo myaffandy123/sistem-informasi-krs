@@ -18,6 +18,11 @@ class MatkulSeeder extends Seeder
             ['nama' => 'Jaringan Komputer', 'kode' => 'CIF2001', 'kelas' => 'B', 'ruang' => 'G1.2'],
             ['nama' => 'Basis Data', 'kode' => 'CIF2020', 'kelas' => 'C', 'ruang' => 'F3.2'],
             ['nama' => 'Metode Numerik', 'kode' => 'CIF2030', 'kelas' => 'D', 'ruang' => 'F4.4'],
+            ['nama' => 'Pemrograman Web', 'kode' => 'CIF2032', 'kelas' => 'C', 'ruang' => 'F3.6'],
+            ['nama' => 'Aljabar Linear', 'kode' => 'CIF2040', 'kelas' => 'B', 'ruang' => 'F3.7'],
+            ['nama' => 'Analisis dan Pernacangan Sistem', 'kode' => 'CIF2060', 'kelas' => 'F', 'ruang' => 'F4.1'],
+            ['nama' => 'Algoritma dan Struktur Data', 'kode' => 'CIF2023', 'kelas' => 'A', 'ruang' => 'F2.2'],
+            ['nama' => 'Bahasa Indonesia', 'kode' => 'CIF2200', 'kelas' => 'N7M', 'ruang' => 'F2.9'],
             
             // Tambahkan data mata kuliah lainnya sesuai kebutuhan
         ];

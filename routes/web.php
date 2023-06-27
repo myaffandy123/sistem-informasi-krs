@@ -28,11 +28,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/mahasiswa', [MahasiswaController::class, 'index'])->middleware('auth');
+Route::get('/mahasiswa', [MahasiswaController::class, 'index'])->middleware('auth')->name('mahasiswa');
 Route::post('/mahasiswa/tambah', [MahasiswaController::class, 'tambahMatkul'])->name('mahasiswa/tambah');
 Route::post('/mahasiswa/hapus', [MahasiswaController::class, 'hapusMatkul'])->name('mahasiswa/hapus');
 
-Route::get('/dosen', [DosenController::class, 'index'])->middleware('auth');
+Route::get('/dosen', [DosenController::class, 'index'])->middleware('auth')->name('dosen');
 Route::post('/dosen/ampu', [DosenController::class, 'ampuMatkul'])->name('dosen/ampu');
 Route::post('/dosen/hapus', [DosenController::class, 'hapusMatkul'])->name('dosen/hapus');
 

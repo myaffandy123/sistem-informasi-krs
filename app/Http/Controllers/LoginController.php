@@ -21,11 +21,11 @@ class LoginController extends Controller
             // return redirect()->intended('/mahasiswa/index');
             $role = auth()->user()->role;
             if ($role == 'mahasiswa') {
-                return redirect('/mahasiswa');
+                return redirect()->route('mahasiswa');
             } else if ($role == 'dosen') {
-                return redirect('/dosen');
+                return redirect()->route('dosen');
             } else {
-                return redirect('/admin');
+                return redirect()->route('admin');
             }
         } else {
             // Autentikasi gagal, pengguna gagal login
