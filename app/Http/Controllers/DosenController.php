@@ -21,6 +21,9 @@ class DosenController extends Controller
         $dosen = Dosen::where('id', auth()->user()->id)->first();
 
         $matkulAmpu = Matkul::find($matkul_id);
+        if (!is_null($matkulAmpu->dosen_id)) {
+            return redirect()->back()->with('danger', 'Mata kuliah ini sudah diampu');
+        }
         $matkulAmpu->dosen_id = $dosen->id;
         $matkulAmpu->dosen_nama = $dosen->nama;
         $matkulAmpu->update();

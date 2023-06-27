@@ -25,7 +25,9 @@ class MahasiswaController extends Controller
     public function tambahMatkul(Request $request) {
         $matkul_id = $request->id;
         $mahasiswa_id = auth()->user()->id;
-
+        if (!is_null(Krs::where('matkul_id', $matkul_id)->where('mahasiswa_id', $mahasiswa_id)->first())) {
+            return redirect()->back()->with('danger', 'Mata kuliah ini sudah diambil');
+        }
         Krs::create([
             'mahasiswa_id' => $mahasiswa_id,
             'matkul_id' => $matkul_id,

@@ -8,6 +8,11 @@
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('success')}}
             </div>
+
+            @elseif (session()-> has('danger')) 
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{ session('danger')}}
+            </div>
             @endif
             <div class="card">
                 <div class="card-header">Dashboard Mahasiswa</div>
